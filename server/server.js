@@ -3,7 +3,7 @@ var path = require('path')
 
 var app = express()
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, '../public')))
 
 app.set('port', 3001)
 var server = app.listen(app.get('port'), function(req, res){
